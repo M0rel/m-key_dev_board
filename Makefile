@@ -36,6 +36,11 @@ BUILD_DIR = build
 ######################################
 # C sources
 C_SOURCES =  \
+Core/Src/key-kernel/core.c \
+Core/Src/key-kernel/key_buffers_manager.c \
+Core/Src/key-kernel/key_layout_provider.c \
+Core/Src/key-kernel/key_manager.c \
+Core/Src/key-kernel/ll_adapter.c \
 Core/Src/main.c \
 Core/Src/stm32f4xx_it.c \
 Core/Src/stm32f4xx_hal_msp.c \
@@ -124,6 +129,7 @@ C_INCLUDES =  \
 -IUSB_DEVICE/App \
 -IUSB_DEVICE/Target \
 -ICore/Inc \
+-ICore/Src/key-kernel \
 -IDrivers/STM32F4xx_HAL_Driver/Inc \
 -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy \
 -IMiddlewares/ST/STM32_USB_Device_Library/Core/Inc \
