@@ -1,3 +1,4 @@
 [submodule "Core/Src/key-kernel"]
 	path = Core/Src/key-kernel
 	url = git@github.com:M0rel/key-kernel.git
+	branch = main
